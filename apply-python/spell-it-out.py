@@ -19,7 +19,8 @@ def spell1(text):
             print("SPACE")
         elif (isinstance(item, str)) == True:
             print(item)
-        
+    print()
+    print("How's my spelling?")       
             # return item
         
         # return item
