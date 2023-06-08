@@ -1,32 +1,15 @@
 text = list(input("Enter statement to be spelled out: "))
-# text = (" " in text) = "SPACE"
-# print(text)
 
-# def spell(text):
-#     for item in text:
-#         # item = text(" ") = "SPACE"
-#         print(item)
-
-
-# spell(text)
-
-
-def spell1(text):
+def spell(text):
     # space = [" "]
     for item in text:
-        str_len = len(item)
+        # str_len = len(item)
         if item.isspace() == True:
             print("SPACE")
         elif (isinstance(item, str)) == True:
             print(item)
     print()
-    print("How's my spelling?")       
-            # return item
-        
-        # return item
-        
-        # item = text(" ") = "SPACE"
-        # print(item)
+    print("How's my spelling?")
 
 
-spell1(text)
+spell(text)
