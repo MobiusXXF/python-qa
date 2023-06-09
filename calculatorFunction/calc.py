@@ -2,8 +2,9 @@
 print("Use 'q' as an operator to exit calculator")
 input("Press return to continue...")
 print()
+
 def calculatorFunction():
-    inUseOperators = ["+", "-", "/", "*", "q"]
+    inUseOperators = ["+", "-", "/", "*", "**", "q"]
     num1 = input("Enter the number: ")
     operator = input("Enter an operator ( - + / *): ")
     num2 = input("Enter the number: ")
@@ -23,6 +24,10 @@ def calculatorFunction():
         calculatorFunction()
     elif operator == "*":
         result = round(float(num1) * float(num2), 2)
+        print(result)
+        calculatorFunction()
+    elif operator == "**":
+        result = round(float(num1) ** float(num2), 2)
         print(result)
         calculatorFunction()
     elif operator == "q":
@@ -45,15 +50,26 @@ def calculatorFunction():
     #         calculatorFunction()
     #     except:
     #         print(num1, num2)
-  
+
     elif operator != inUseOperators:
         try:
             (operator in inUseOperators) == False
         except:
+            ...
+        else:
             print("Invalid operator")
             calculatorFunction()
-        else:
-            print(f'Operator state: {operator}')
+
+    # Is a for loop needed to iterate over num to check if 0-9,
+    # has been inputted or not? Then try except to continue or restart
+
+
+
+
+    # elif (num1 and num2) not in str(num):
+    #     print("Invalid number")
+    #     calculatorFunction()
+
     # elif operator == inUseOperators:
     #     print(f'Operator state: {operator}')
     # e
