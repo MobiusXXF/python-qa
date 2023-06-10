@@ -51,6 +51,28 @@ def main():
         if exit: # exits out of program if user inputs correct value
             break
 
+        while True:
+
+            if operator == "+":
+                result = round(float(num1) + float(num2), 2)
+                print(result)
+                break
+            elif operator == "-":
+                result = round(float(num1) - float(num2), 2)
+                print(result)
+                break
+            elif operator == "/":
+                result = round(float(num1) / float(num2), 2)
+                print(result)
+                break
+            elif operator == "*":
+                result = round(float(num1) * float(num2), 2)
+                print(result)
+                break
+            elif operator == "**":
+                result = round(float(num1) ** float(num2), 2)
+                print(result)
+                break 
         
 
 # Perform arithmetic

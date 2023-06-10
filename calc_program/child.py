@@ -1,3 +1,3 @@
-import calc.py
+from calc2 import main
 
-calculatorFunction()
+main()
